@@ -27,10 +27,11 @@ a:hover {
 }
 
 .title {
-    border-radius: 8px;
+    padding: 30px;
+    margin: 0;
     color: white;
     text-align: center; 
-    background-color: rgb(131, 131, 239)
+    background-color: rgb(0, 0, 0)
 }
 
 .nav-buttons ul {
@@ -71,5 +72,9 @@ a:hover {
     text-decoration: none;
     border-radius: 8px;
     transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.main{
+    padding: 20px;
 }
 
