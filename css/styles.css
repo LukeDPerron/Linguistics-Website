@@ -109,5 +109,15 @@ a {
   display: inline-block;
   width: 30%;
   font-size: 1.6em;
-  padding: 50px;
+  padding: 45px;
 }
+
+/* Back button styling (matches process boxes) */
+.back-box {
+  display: inline-block;
+  margin: 40px auto 0;
+  padding: 15px 30px;
+  font-size: 1.1em;
+  width: fit-content;
+}
+
