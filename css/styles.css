@@ -60,7 +60,6 @@ a {
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
 }
 
-/* Home page button sizing */
 .home-box {
   display: inline-block;
   width: 30%;
@@ -68,7 +67,6 @@ a {
   padding: 45px;
 }
 
-/* Back button styling (matches process boxes) */
 .back-box {
   display: inline-block;
   margin: 40px auto 0;
@@ -76,4 +74,22 @@ a {
   font-size: 1.1em;
   width: fit-content;
 }
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Fade in everything AFTER the hr */
+.main > *:not(hr) {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+
 
