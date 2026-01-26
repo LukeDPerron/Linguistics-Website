@@ -1,3 +1,8 @@
+body.homepage {
+    overflow-y: auto;
+    min-height: 100vh;
+}
+
 body {
     min-height: 100vh;
     font-family: "Roboto", sans-serif;
@@ -15,7 +20,7 @@ h1 {
 h1.title {
     font-family: "Baskervville", serif;
     font-weight: 700;
-    font-size: 3em;
+    font-size: clamp(2em, 5vw, 3em);
     color: #4A2C1D;
     text-align: center;
     margin: 0;
@@ -60,7 +65,7 @@ a {
 
 .nav-buttons li {
     list-style: none;
-    margin: 45px 0;
+    margin: 25px 0;
 }
 
 .main {
@@ -77,7 +82,7 @@ a {
 
 .process-box {
     text-align: center;
-    padding: 30px 15px;
+    padding: 20px 10px;
     background-color: #FFF6EC;
     border-radius: 10px;
     text-decoration: none;
@@ -94,9 +99,10 @@ a {
 
 .home-box {
     display: inline-block;
-    width: 30%;
-    font-size: 1.6em;
-    padding: 45px;
+    width: 40%;
+    font-size: 1.4em;
+    padding: 25px;
+    box-sizing: border-box;
 }
 
 .back-box {
@@ -127,4 +133,11 @@ a {
     margin-top: 20px;
     margin-bottom: 30px;
     font-size: 1.8em;
+}
+
+.process-box i {
+    width: 34px;
+    height: 34px;
+    margin-bottom: 14px;
+    stroke-width: 1.5;
 }
