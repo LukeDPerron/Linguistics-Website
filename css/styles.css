@@ -86,10 +86,14 @@ a {
   }
 }
 
-/* Fade in everything AFTER the hr */
 .main > *:not(hr) {
   animation: fadeInUp 0.6s ease-out;
 }
 
-
+.Header {
+  text-align: center;
+  margin-top: 20px;   
+  margin-bottom: 30px; 
+  font-size: 1.8em; 
+}
 
