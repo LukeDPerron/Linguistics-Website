@@ -75,18 +75,19 @@ a {
 .process-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-    max-width: 900px;
+    gap: 25px;
+    max-width: 1000px;
     margin: 40px auto;
 }
 
 .process-box {
     text-align: center;
-    padding: 20px 10px;
+    padding: 40px 20px;
     background-color: #FFF6EC;
     border-radius: 10px;
     text-decoration: none;
     font-weight: bold;
+    font-size: 1em;
     color: #4A2C1D;
     box-shadow: 0 4px 10px rgba(74, 44, 29, 0.2);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -108,8 +109,8 @@ a {
 .back-box {
     display: inline-block;
     margin: 40px auto 0;
-    padding: 15px 30px;
-    font-size: 1.1em;
+    padding: 25px 40px;
+    font-size: 1.3em;
     width: fit-content;
 }
 
