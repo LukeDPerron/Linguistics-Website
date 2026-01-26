@@ -1,24 +1,56 @@
 body {
     min-height: 100vh;
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background: linear-gradient(to bottom, #378c9a, #ffffff);
+    font-family: "Roboto", sans-serif;
+    line-height: 1.7;
+    background: #F3E6D8;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    color: #5A3A2E;
 }
 
 h1 {
     font-size: 2.5em;
 }
 
+h1.title {
+    font-family: "Baskervville", serif;
+    font-weight: 700;
+    font-size: 3em;
+    color: #4A2C1D;
+    text-align: center;
+    margin: 0;
+    padding: 30px 0 20px 0;
+    letter-spacing: 1px;
+}
+
+h2,
+.Header {
+    font-family: "Baskervville", serif;
+    font-weight: 600;
+    font-size: 2em;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    color: #4A2C1D;
+}
+
+p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+
 a {
     text-decoration: none;
-    color: #0047ab;
+    color: #A66A3F;
 }
 
 .title {
     padding: 30px 0 0 0;
     margin: 0;
-    color: white;
-    text-align: center; 
+    color: #4A2C1D;
+    text-align: center;
 }
 
 .nav-buttons ul {
@@ -31,69 +63,68 @@ a {
     margin: 45px 0;
 }
 
-.main{
+.main {
     padding: 20px;
 }
 
 .process-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-  max-width: 900px;
-  margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 900px;
+    margin: 40px auto;
 }
 
 .process-box {
-  text-align: center;
-  padding: 30px 15px;
-  background-color: rgba(255, 255, 255, 0.85);
-  border-radius: 10px;
-  text-decoration: none;
-  font-weight: bold;
-  color: #1f4f5a;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-align: center;
+    padding: 30px 15px;
+    background-color: #FFF6EC;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #4A2C1D;
+    box-shadow: 0 4px 10px rgba(74, 44, 29, 0.2);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .process-box:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(74, 44, 29, 0.35);
 }
 
 .home-box {
-  display: inline-block;
-  width: 30%;
-  font-size: 1.6em;
-  padding: 45px;
+    display: inline-block;
+    width: 30%;
+    font-size: 1.6em;
+    padding: 45px;
 }
 
 .back-box {
-  display: inline-block;
-  margin: 40px auto 0;
-  padding: 15px 30px;
-  font-size: 1.1em;
-  width: fit-content;
+    display: inline-block;
+    margin: 40px auto 0;
+    padding: 15px 30px;
+    font-size: 1.1em;
+    width: fit-content;
 }
 
 @keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(12px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .main > *:not(hr) {
-  animation: fadeInUp 0.6s ease-out;
+    animation: fadeInUp 0.6s ease-out;
 }
 
 .Header {
-  text-align: center;
-  margin-top: 20px;   
-  margin-bottom: 30px; 
-  font-size: 1.8em; 
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 1.8em;
 }
-
