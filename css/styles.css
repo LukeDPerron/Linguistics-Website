@@ -28,14 +28,13 @@ h1.title {
     letter-spacing: 1px;
 }
 
-h2,
+
 .Header {
     font-family: "Baskervville", serif;
-    font-weight: 600;
-    font-size: 2em;
-    text-align: center;
+    font-weight: 700;
+    font-size: 1.8em;
     margin-top: 25px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     color: #4A2C1D;
 }
 
@@ -70,6 +69,15 @@ a {
 
 .main {
     padding: 20px;
+}
+
+.main h4 {
+    font-family: "Baskervville", serif;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    color: #4A2C1D;
+    font-weight: 550;
+    margin-left: 20px;
 }
 
 .process-grid {
@@ -127,13 +135,6 @@ a {
 
 .main > *:not(hr) {
     animation: fadeInUp 0.6s ease-out;
-}
-
-.Header {
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 30px;
-    font-size: 1.8em;
 }
 
 .process-box i {
