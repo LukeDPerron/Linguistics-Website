@@ -79,8 +79,8 @@ a {
     font-weight: 550;
     margin-left: 20px;
 
-    line-height: 1.4;      /* ← tighter text */
-    margin-bottom: 10px;   /* ← less vertical spacing */
+    line-height: 1.4;     
+    margin-bottom: 10px;  
 }
 
 
@@ -114,7 +114,7 @@ a {
     display: inline-block;
     width: 40%;
     font-size: 1.4em;
-    padding: 25px;
+    padding: 35px;
     box-sizing: border-box;
 }
 
@@ -150,16 +150,17 @@ a {
 
 .main hr {
     border: none;
-    height: 1.5px;
-    width: 80%;
+    width: 65%;
+    margin: 12px auto 30px auto;
+    height: 5px;
 
-    margin: 6px auto 30px auto; /* closer to title */
+    background:
+      linear-gradient(#4A2C1D, #4A2C1D) top,
+      linear-gradient(#4A2C1D, #4A2C1D) bottom;
+    background-size: 100% 1px;
+    background-repeat: no-repeat;
 
-    background: linear-gradient(
-        to right,
-        transparent,
-        #4A2C1D,
-        transparent
-    );
+    opacity: 0.8;
 }
+
 
