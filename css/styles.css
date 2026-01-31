@@ -163,4 +163,9 @@ a {
     opacity: 0.8;
 }
 
-
+.example-label {
+    display: inline-block;
+    font-size: 1.2em;
+    letter-spacing: 0.5px;
+    color: #4A2C1D;
+}
