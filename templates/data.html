@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %}Working Data{% endblock %}
+{% block body_class %}homepage{% endblock %}
+
+{% block content %}
+
+  <h1 class="title">Working Data</h1>
+  <div class="main">
+    <hr>
+
+    <div class="process-grid">
+      <a href="{{ url_for('affixation_data') }}" class="process-box">Affixation</a>
+      <a href="{{ url_for('blending_data') }}" class="process-box">Blending</a>
+      <a href="{{ url_for('compounding_data') }}" class="process-box">Compounding</a>
+      <a href="{{ url_for('conversion_data') }}" class="process-box">Conversion</a>
+      <a href="{{ url_for('metaphor_metonymy_data') }}" class="process-box">Metaphor & Metonymy</a>
+      <a href="{{ url_for('reduplication_data') }}" class="process-box">Reduplication</a>
+      <a href="{{ url_for('eponymy_data') }}" class="process-box">Eponymy</a>
+      <a href="{{ url_for('pure_coinage_data') }}" class="process-box">Pure Coinage</a>
+    </div>
+  
+    <a class="process-box back-box" href="{{ url_for('index') }}">&larr; Back to main page</a>
+
+  </div>
+{% endblock %}

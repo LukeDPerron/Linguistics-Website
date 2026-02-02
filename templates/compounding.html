@@ -1,15 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Compounding</title>
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
-</head>
+{% extends "base.html" %}
 
-<body>
+{% block title %}Compounding{% endblock %}
+
+{% block content %}
   <h1 class="title">Compounding</h1>
 
   <div class="main">
@@ -92,9 +85,10 @@
       <strong>• nightgown</strong><br><br>
     </h4>
 
-    <a class="process-box back-box" href="processes.html">
+    <a class="process-box back-box" href="{{ url_for('processes') }}">
       &larr; Back to Word Formation Processes
+
     </a>
   </div>
-</body>
-</html>
+{% endblock %}
+

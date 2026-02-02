@@ -1,0 +1,26 @@
+  {% extends "base.html" %}
+
+  {% block title %}Word Formation Processes{% endblock %}
+  {% block body_class %}homepage{% endblock %}
+
+  {% block content %}
+
+  <h1 class="title">Word Formation Processes</h1>
+  <div class="main">
+    <hr>
+
+    <div class="process-grid">
+      <a href="{{ url_for('compounding') }}" class="process-box">Compounding</a>
+      <a href="{{ url_for('blending') }}" class="process-box">Blending</a>
+      <a href="{{ url_for('conversion') }}" class="process-box">Conversion</a>
+      <a href="{{ url_for('metaphor_metonymy') }}" class="process-box">Metaphor & Metonymy</a>
+      <a href="{{ url_for('reduplication') }}" class="process-box">Reduplication</a>
+      <a href="{{ url_for('eponymy') }}" class="process-box">Eponymy</a>
+      <a href="{{ url_for('pure_coinage') }}" class="process-box">Pure Coinage</a>
+      <a href="{{ url_for('affixation') }}" class="process-box">Affixation</a>
+    </div>
+
+    <a class="process-box back-box" href="{{ url_for('index') }}">&larr; Back to main page</a>
+
+  </div>
+  {% endblock %}

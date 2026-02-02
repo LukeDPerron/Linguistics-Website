@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block title %}Affixation Data{% endblock %}
+
+{% block content %}
+
+  <h1 class="title">Blending</h1>
+
+  <div class="main">
+    <hr>
+
+    <h2 class="Header">Real-Life Examples</h2>
+
+    {# 
+    {% for example in examples %}
+      <p>{{ example.text }}</p>
+    {% endfor %}
+    #}
+
+    <a class="process-box back-box" href="{{ url_for('data') }}">
+      &larr; Back to Working Data
+    </a>
+  </div>
+{% endblock %}

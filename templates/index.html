@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block title %}New Words Project{% endblock %}
+{% block body_class %}homepage{% endblock %}
+
+{% block head_extra %}
+<script src="https://unpkg.com/lucide@latest"></script>
+{% endblock %}
+
+{% block content %}
+<h1 class="title">New Words Project</h1>
+
+<div class="main">
+  <hr>
+  <nav class="nav-buttons">
+    <ul>
+      <li>
+        <a class="process-box home-box" href="{{ url_for('processes') }}">
+          <i data-lucide="whole-word"></i><br>
+          Word Formation Processes
+        </a>
+      </li>
+      <li>
+        <a class="process-box home-box" href="{{ url_for('data') }}">
+          <i data-lucide="hammer"></i><br>
+          Working Data
+        </a>
+      </li>
+      <li>
+        <a class="process-box home-box" href="{{ url_for('theory') }}">
+          <i data-lucide="lightbulb"></i><br>
+          Toward Explanation
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+  lucide.createIcons();
+</script>
+{% endblock %}
