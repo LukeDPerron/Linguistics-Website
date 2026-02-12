@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-    // Initialize Lucide icons
     if (window.lucide) {
         lucide.createIcons();
     }
