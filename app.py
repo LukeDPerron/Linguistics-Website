@@ -2,12 +2,10 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
-# Home Page
 @app.route("/")
 def index():
     return render_template("index.html")
 
-# Word Formation Processes
 @app.route("/processes")
 def processes():
     return render_template("processes.html")
@@ -44,7 +42,6 @@ def eponymy():
 def pure_coinage():
     return render_template("pure-coinage.html")
 
-# Working Data Pages
 @app.route("/data")
 def data():
     return render_template("data.html")
@@ -81,11 +78,9 @@ def eponymy_data():
 def pure_coinage_data():
     return render_template("pure-coinage-data.html")
 
-# Theory Page
 @app.route("/theory")
 def theory():
     return render_template("theory.html")
 
-# Run the App
 if __name__ == "__main__":
     app.run(debug=True)
